@@ -26,3 +26,11 @@ print(type(user_details)) # dict
 
 detail = (1,2,3)
 print(type(detail)) # tuple
+
+
+# Python Data Types Test
+name = "Shahwaiz"
+Age = 21
+Year_Of_Birth = "12-jan-2005"
+Is_New_User = True
+Fruits = ["Apple", "Mango", "Banana", "WaterMelon"]
