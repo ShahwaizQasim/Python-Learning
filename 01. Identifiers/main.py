@@ -20,4 +20,6 @@ name2 = "Muhammad Ali"
 class = "ali"
 2name = "wasid"
 mark$ = 22
+my name = "shahwaiz"
+my-name = "ali"
 '''
