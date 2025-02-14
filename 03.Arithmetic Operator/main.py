@@ -19,4 +19,4 @@ a = 4
 b = 3
 c = 5
 
-print("Average three numbers", a + b + c / 3)
+print("Average three numbers", (a + b + c) / 3) # BODMAS Rule ki waja se (a + b + c) ko column me rakha hai
