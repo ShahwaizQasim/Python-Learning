@@ -1,0 +1,27 @@
+
+__pycache__ Kyun Banta Hai?
+Speed: Jab aap dobara wahi code run karte hain, Python .pyc file se directly execute karta hai, toh compilation ka time bach jata hai.
+Efficiency: Har baar source code ko compile karne ki zarurat nahi padti, agar .pyc file already hai aur source code mein koi change nahi hua.
+
+__pycache__ Kab Banta Hai?
+Python __pycache__ folder tab banata hai jab:
+
+Aap import statement use karte ho (jaise from main import shah).
+Python ko ek module (file) ko as a separate entity treat karna padta hai, jiska compiled version save hota hai.
+
+Case 1: Jab Aap test.py Run Karte Ho
+test.py mein from main import shah likha hai.
+Python main.py ko ek module ke roop mein dekhta hai.
+Pehle main.py ko compile karta hai aur uska bytecode __pycache__ mein save karta hai (jaise __pycache__/main.cpython-39.pyc).
+Phir test.py ko compile karta hai aur uska bhi bytecode save hota hai (jaise __pycache__/test.cpython-39.pyc).
+Isliye __pycache__ folder ban gaya, kyunki import ki wajah se Python ne main.py ko alag se process kiya.
+
+Case 2: Jab Aap Sirf main.py Run Karte Ho
+Agar aap directly python main.py chalate ho:
+Python main.py ko as a standalone script treat karta hai, na ki module.
+Yeh compile toh hota hai, lekin bytecode memory mein rehta hai aur disk pe __pycache__ mein save nahi hota.
+Jab tak aap is file ko kisi dusri file mein import nahi karte, __pycache__ nahi banega.
+
+Kyun Aisa Hota Hai?
+Standalone Script: Jab aap ek file ko directly run karte ho, Python usko temporary execute karta hai aur compiled version ko save nahi rakhta, kyunki shayad aap usko baar-baar as a module use na karo.
+Imported Module: Jab aap import karte ho, Python sochta hai ki yeh file baar-baar use ho sakti hai, isliye uska compiled version __pycache__ mein rakhta hai taaki agle run mein time bache.
