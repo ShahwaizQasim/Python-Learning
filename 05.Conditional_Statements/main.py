@@ -25,3 +25,9 @@ elif num == 0:
 else:
     print("Negative Number")
 
+
+userName = "Shahwaizd"
+if userName == "Shahwaiz":
+    print("condition true")
+else:
+    print("condition false")

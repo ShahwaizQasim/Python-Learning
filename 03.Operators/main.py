@@ -40,8 +40,8 @@ print(num1 <= num2) # False
 # 3) Logical Operators
 # Logical conditions check karne ke liye use hote hain:
 
-x = True;
-y = False;
+x = True
+y = False
 
 print(x and y) #false
 print(x or y) #true 
