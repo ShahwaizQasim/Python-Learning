@@ -1,21 +1,21 @@
 
 rating = 4.7 # float 
-# print(type (rating))
+print("rating==", type (rating))
 
 name = "Shahwaiz" # str
-# print(type(name))
+print("name_type", type(name))
 
 marks = 98 # int
-# print(type(marks))
+print("marks_type", type(marks))
 
 is_passed = False # bool
-# print(type(is_passed))
+print("is_passed_type", type(is_passed))
 
 my_complex_Number = 4 + 5j # complex
-# print(type(my_complex_Number))
+print("my_complex_Number_type", type(my_complex_Number))
 
 fruits_list = ['Apple', 'Mango', 'Banana'] # list
-# print(type(fruits_list))
+print("fruits_list_type", type(fruits_list))
 
 #Isme keys unique hoti hain aur har key ki ek value hoti hai.
 user_details = {
@@ -36,6 +36,10 @@ Year_Of_Birth = "12-jan-2005" # str
 Is_New_User = True # bool
 Fruits = ["Apple", "Mango", "Banana", "WaterMelon"] # list
 number = (2,4,6,8) # tuple
+
+# dict Python mein Dictionary data type ko kehte hain
+# Dictionary kya hoti hai?
+# Dictionary mein data key : value ke form mein store hota hai:
 trainer_details = {
     "Trainer_Name": "Shehzad Iqbal",
     "Course": "Modern Web And App Development",
@@ -43,6 +47,7 @@ trainer_details = {
     "Campus": "Gulshan",
 } # dict
 
+print("trainer_details_type", type(trainer_details))
 print(trainer_details["Trainer_Name"])  # first method
 print(trainer_details.get("Trainer_Name")) # second method
 
@@ -56,3 +61,32 @@ print(f"course: {course}")
 # Python mein f-string (formatted string literal) kehte hain
 num = 5
 print(f"Double of {num} is {num * 2}")
+
+
+fruitList = ['Mango', 'Apple', 'Melon', 'WaterMelon'];
+print(fruitList) # Mango
+
+TrainerDetails = {
+    "name": "Ghous Ahmed",
+    "Course": "Modern Web And App Development",
+    "Course_Duration": "One Year",
+    "Timing": "9am to 11am"
+}
+
+print(TrainerDetails["name"])
+
+
+
+# Data Types Conversion 
+number = "100"
+print(type(number)) 
+
+number = int(number)
+print(type(number)) 
+
+age = 10 
+
+# float
+age = float(age)
+print(age)
+print(type(age))

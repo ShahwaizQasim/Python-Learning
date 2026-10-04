@@ -30,11 +30,11 @@ num1 = 20
 num2 = 30
 
 print(num1 == num2) # False
-print(num1 != num2) # False
+print(num1 != num2) # True
 print(num1 > num2) # False
-print(num1 < num2) # False
+print(num1 < num2) # True
 print(num1 >= num2) # False
-print(num1 <= num2) # False
+print(num1 <= num2) # True
 
 
 # 3) Logical Operators
@@ -68,3 +68,12 @@ print(d)
 # //=	    a //= 3 --> Same --> a = a // 3
 # %=	    a %= 2 --> Same --> a = a % 2
 # **=	    a **= 2 --> Same --> a = a ** 2
+
+English = 55
+Math = 65
+Islamiat = 50
+Total_Marks = English + Math + Islamiat
+
+Calculate_Percentage = (Total_Marks / 300) * 100
+
+print("Calculate Percentage:", Calculate_Percentage)
